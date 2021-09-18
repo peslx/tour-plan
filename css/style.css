@@ -443,4 +443,36 @@ template {
   color: #333333;
   margin-left: 18px;
 }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .navbar-top {
+    padding: 30px 0;
+  }
+  .navbar__search {
+    margin-left: auto;
+    max-width: 340px;
+  }
+  .navbar-menu {
+    padding: 22px 0;
+  }
+  .navbar-menu__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 576px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
