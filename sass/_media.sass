@@ -24,13 +24,18 @@
 
 @media screen and ( max-width: 768px )
   .container
-    max-width: 576px
+    max-width: 98%
+    // padding: 0 20px
+  .search
+    &__input
+      width: 300px
+  .logo
+    width: 122px
+
+@media screen and ( max-width: 576px )
+  .container
+    min-width: 320px
     padding: 0 20px
-  .navbar
-    &__search, &-menu, &__user
-      display: none
-    // &-top
-    //   &__menu-button
   .menu
     &-button
         display: flex
@@ -47,11 +52,11 @@
           width: 16px
           height: 1px
           background-color: $text-color
-
-@media screen and ( max-width: 576px )
-  .container
-    min-width: 320px
-    padding: 0 20px
+  .navbar
+    &__search, &-menu, &__user
+      display: none
+    // &-top
+    //   &__menu-button
   .logo
     width: 99px
   

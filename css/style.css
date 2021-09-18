@@ -485,11 +485,20 @@ template {
 
 @media screen and (max-width: 768px) {
   .container {
-    max-width: 576px;
-    padding: 0 20px;
+    max-width: 98%;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
-    display: none;
+  .search__input {
+    width: 300px;
+  }
+  .logo {
+    width: 122px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    min-width: 320px;
+    padding: 0 20px;
   }
   .menu-button {
     display: flex;
@@ -508,12 +517,8 @@ template {
     height: 1px;
     background-color: #333333;
   }
-}
-
-@media screen and (max-width: 576px) {
-  .container {
-    min-width: 320px;
-    padding: 0 20px;
+  .navbar__search, .navbar-menu, .navbar__user {
+    display: none;
   }
   .logo {
     width: 99px;
