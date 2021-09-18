@@ -480,6 +480,7 @@ template {
 @media screen and (max-width: 768px) {
   .container {
     max-width: 576px;
+    padding: 0 20px;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
@@ -500,6 +501,10 @@ template {
 }
 
 @media screen and (max-width: 576px) {
+  .container {
+    min-width: 320px;
+    padding: 0 20px;
+  }
   .logo {
     width: 99px;
   }
