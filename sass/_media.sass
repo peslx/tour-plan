@@ -1,7 +1,8 @@
 @media screen and ( max-width: 1200px )
   .container
     max-width: 960px
-
+  .slider
+    width: 600px
 @media screen and ( max-width: 992px )
   .container
     max-width: 700px
@@ -21,6 +22,20 @@
   .search
     &__input
       width: 340px
+  .hotel
+    &-grid
+      flex-direction: column
+      &__info
+        flex-direction: row
+        gap: 20px
+    &-slider
+      margin-bottom: 30px
+  .slider
+    width: 100%
+  .booking
+    width: 340px
+  .map
+    width: 340px
 
 @media screen and ( max-width: 768px )
   .container
@@ -31,6 +46,18 @@
       width: 300px
   .logo
     width: 122px
+  .slider
+    // width: 728px
+    height: 350px
+  .hotel
+    &-grid
+      min-height: 450px
+      &__info
+        flex-direction: column
+  .booking
+    width: 100%
+  .map
+    width: 100%
 
 @media screen and ( max-width: 576px )
   .container
@@ -74,6 +101,12 @@
         margin-left: 0
     &-description
       margin: 0
+    &__slider
+      margin-bottom: 20px
+    &-grid
+      &__info
+        gap: 30px
+        margin-bottom: 20px
         
   .stars
     width: auto
@@ -82,4 +115,6 @@
     margin-right: 15px
   .logo
     width: 99px
+  .slider
+    height: 250px
   
