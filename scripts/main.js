@@ -4,10 +4,10 @@ const swiper = new Swiper(".swiper", {
   // direction: "vertical",
   loop: true,
 
-  // keyboard: {
-  //   enabled: true,
-  //   onlyInViewport: false,
-  // },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 
   // Navigation arrows
   navigation: {
