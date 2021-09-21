@@ -484,6 +484,7 @@ template {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .hotel-info__description {
@@ -554,6 +555,60 @@ template {
 .raiting__counter {
   font-size: 14px;
   line-height: 18px;
+}
+
+.swiper {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.swiper-slide::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  border-radius: 8px;
+}
+
+.swiper-button {
+  background-color: red;
+  z-index: 100;
+}
+
+.slider {
+  width: 728px;
+}
+
+.slider-button {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: 50;
+  cursor: pointer;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-button--next {
+  right: 18px;
+  background-image: url(../img/arrow-next.svg);
+}
+
+.slider-button--prev {
+  left: 18px;
+  background-image: url(../img/arrow-prev.svg);
 }
 
 @media screen and (max-width: 1200px) {
