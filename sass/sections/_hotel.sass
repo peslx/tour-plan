@@ -81,9 +81,7 @@
       width: 100%
       height: 100%
       object-fit: cover
-  &-button
-    background-color: red
-    z-index: 100
+
 .slider
   width: 728px
   height: 450px
@@ -93,19 +91,26 @@
     position: absolute
     top: 50%
     border: none
-    background-color: transparent
+    background-color: $accent-color-transp
     border-radius: 50%
     z-index: 50
     cursor: pointer
     transform: translateY(-50%)
     background-repeat: no-repeat
     background-position: center
+    transition: .3s
     &--next
       right: 18px
       background-image: url(../img/arrow-next.svg)
+      background-position-x: 11px
     &--prev
       left: 18px
       background-image: url(../img/arrow-prev.svg)
+      background-position-x: 9px
+    &:hover
+      background-color: $accent-color
+      box-shadow: 0 0 10px $accent-color
+
 .booking
   width: 350px
   height: 210px
