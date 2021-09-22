@@ -15,3 +15,11 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".slider-button--prev",
   },
 });
+
+const reviewsSlider = new Swiper(".reviews-slider", {
+  loop: true,
+  navigation: {
+    nextEl: ".reviews-slider__button--next",
+    prevEl: ".reviews-slider__button--prev",
+  },
+});

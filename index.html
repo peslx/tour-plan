@@ -137,27 +137,27 @@
         <div class="hotel-grid">
           <div class="slider hotel-slider">
             <!-- Slider main container -->
-            <div class="swiper">
+            <div class="swiper hotel-swiper">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide">
+                <div class="swiper-slide hotel-swiper__slide">
                   <img
-                    class="swiper-slide__img"
+                    class="hotel-swiper__img"
                     src="img/grand_hilton_hotel/grand_hilton_hotel_01.jpg"
                     alt="slide"
                   />
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide hotel-swiper__slide">
                   <img
-                    class="swiper-slide__img"
+                    class="hotel-swiper__img"
                     src="img/grand_hilton_hotel/grand_hilton_hotel_02.jpg"
                     alt="slide"
                   />
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide hotel-swiper__slide">
                   <img
-                    class="swiper-slide__img"
+                    class="hotel-swiper__img"
                     src="img/grand_hilton_hotel/grand_hilton_hotel_03.jpg"
                     alt="slide"
                   />
@@ -265,6 +265,76 @@
       <!-- /.newsletter-wrapper -->
     </section>
     <!-- /.newsletter -->
+
+    <section class="reviews">
+      <div class="container">
+        <h2 class="section-title">What people think about us</h2>
+        <!-- /.section-title -->
+
+        <div class="swiper reviews-slider">
+          <div class="swiper-wrapper reviews-slider__wrapper">
+            <div class="swiper-slide reviews-slide">
+              <div class="review">
+                <div class="review-container">
+                  <div class="review-author author">
+                    <div class="author-avatar">
+                      <img
+                        src="img/reviews/Megan_Fox.jpg"
+                        alt="Avatar: Megan Fox"
+                        class="author-avatar__img"
+                      />
+                    </div>
+                    <!-- /.author-avatar -->
+                    <span class="author-name">Megan Fox</span>
+                    <!-- /span.author-name -->
+                    <span class="author-stayed">Stayed 18 Nov, 2019</span>
+                    <!-- /span.author-stayed -->
+                    <div class="author-raiting">
+                      <div class="stars author-raiting__stars">
+                        <img src="img/star.svg" alt="" />
+                        <img src="img/star.svg" alt="" />
+                        <img src="img/star.svg" alt="" />
+                        <img src="img/star.svg" alt="" />
+                        <img src="img/star.svg" alt="" />
+                      </div>
+                      <!-- /.stars author-raiting__stars -->
+                    </div>
+                    <!-- /.author-raiting -->
+                  </div>
+                  <!-- /.review-author -->
+                  <div class="review-text">
+                    It was very nice hotel with cleanliness. Staff behavior was
+                    good and polite. They welcome us very well. Issue was only
+                    that Lift was not in working and we were allotted to 3rd
+                    floor and amenities articles were in corner of gallery which
+                    were giving bad feeling. Breakfast was good and support of
+                    the staff was also very nice. Location is not good as per
+                    atmosphere, it is very nearby most of the popular places but
+                    self location in a narrow street is not good. Overall it was
+                    a good experience and could recommend.
+                  </div>
+                  <!-- /.review-text -->
+                </div>
+                <!-- /.review-container -->
+              </div>
+              <!-- /.review -->
+            </div>
+            <!-- /.swiper-slide reviews-slide -->
+          </div>
+          <!-- /.swiper-wrapper -->
+
+          <button
+            class="reviews-slider__button reviews-slider__button--prev"
+          ></button>
+          <button
+            class="reviews-slider__button reviews-slider__button--next"
+          ></button>
+        </div>
+        <!-- /.swiper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.reviews -->
 
     <script src="scripts/swiper-bundle.min.js"></script>
     <script src="scripts/main.js"></script>
