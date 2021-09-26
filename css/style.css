@@ -748,9 +748,10 @@ template {
   padding: 98px 0 87px 0;
   background-image: url(../img/newsletter.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
   position: relative;
+  background-attachment: scroll;
 }
 
 .newsletter::before {
@@ -1060,6 +1061,9 @@ template {
   .map {
     width: 100%;
   }
+  .newsletter {
+    background-size: 240%;
+  }
   .newsletter-wrapper {
     max-width: 676px;
     width: 92%;
@@ -1160,6 +1164,7 @@ template {
     height: 250px;
   }
   .newsletter {
+    background-size: 360%;
     padding: 76px 20px 83px 20px;
   }
   .newsletter-wrapper {

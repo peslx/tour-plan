@@ -17,6 +17,10 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js" defer></script>
+    <script src="scripts/jquery.stellar.min.js" defer></script>
+    <script src="scripts/swiper-bundle.min.js" defer></script>
+    <script src="scripts/main.js" defer></script>
   </head>
   <body>
     <header class="navbar">
@@ -247,7 +251,11 @@
     </section>
     <!-- /.hotel -->
 
-    <section class="newsletter">
+    <section
+      class="newsletter"
+      id="parallaxed"
+      data-stellar-background-ratio="0.5"
+    >
       <div class="newsletter-wrapper">
         <h2 class="newsletter-title">
           subscribe to our
@@ -449,8 +457,5 @@
       <!-- /.container -->
     </section>
     <!-- /.reviews -->
-
-    <script src="scripts/swiper-bundle.min.js"></script>
-    <script src="scripts/main.js"></script>
   </body>
 </html>
