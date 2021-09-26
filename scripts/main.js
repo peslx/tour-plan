@@ -26,6 +26,6 @@ const reviewsSlider = new Swiper(".reviews-slider", {
 
 $.stellar({
   horizontalOffset: 50,
-  verticalOffset: -50,
+  verticalOffset: 0,
   responsive: true,
 });
