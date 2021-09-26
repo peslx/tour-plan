@@ -10,6 +10,10 @@
   margin-top: 40px
   margin-bottom: 70px
 
+.swiper
+  position: static
+  &-wrapper
+    position: static
 .reviews
   &-slider
     max-width: 800px
@@ -31,18 +35,17 @@
       background-position: center
       cursor: pointer
       &--prev
-        background-image: url('/img/arrow-grey-prev.svg')
+        background-image: url('../img/arrow-grey-prev.svg')
+        left: 0
       &--next
         right: 0
-        background-image: url('/img/arrow-grey-next.svg')
+        background-image: url('../img/arrow-grey-next.svg')
   &__slide
     margin-top: 45px
   &-slide
 
 
 .review
-  &__item
-    margin: 0 25px
   &-container
     display: flex
     flex-direction: column
@@ -57,7 +60,7 @@
       width: 70px
       height: 48px
       position: absolute
-      background-image: url('/img/quotes.svg')
+      background-image: url('../img/quotes.svg')
       background-repeat: no-repeat
       background-size: cover
       left: 0
@@ -69,7 +72,7 @@
       width: 70px
       height: 48px
       position: absolute
-      background-image: url('/img/quotes.svg')
+      background-image: url('../img/quotes.svg')
       background-repeat: no-repeat
       background-size: cover
       right: 0
@@ -83,6 +86,9 @@
       margin-top: -45px
       margin-bottom: 32px
       position: relative
+      display: flex
+      flex-direction: column
+      align-items: center
      
   &-text
     max-width: 537px
@@ -93,9 +99,6 @@
     text-align: justify
 
 .author
-  display: flex
-  flex-direction: column
-  align-items: center
   &-avatar
     width: 90px
     height: 90px

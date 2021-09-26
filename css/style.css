@@ -598,6 +598,7 @@ template {
 .slider {
   width: 728px;
   height: 450px;
+  position: relative;
 }
 
 .slider-button {
@@ -833,6 +834,14 @@ template {
   margin-bottom: 70px;
 }
 
+.swiper {
+  position: static;
+}
+
+.swiper-wrapper {
+  position: static;
+}
+
 .reviews-slider {
   max-width: 800px;
   height: auto;
@@ -857,20 +866,17 @@ template {
 }
 
 .reviews-slider__button--prev {
-  background-image: url("/img/arrow-grey-prev.svg");
+  background-image: url("../img/arrow-grey-prev.svg");
+  left: 0;
 }
 
 .reviews-slider__button--next {
   right: 0;
-  background-image: url("/img/arrow-grey-next.svg");
+  background-image: url("../img/arrow-grey-next.svg");
 }
 
 .reviews__slide {
   margin-top: 45px;
-}
-
-.review__item {
-  margin: 0 25px;
 }
 
 .review-container {
@@ -889,7 +895,7 @@ template {
   width: 70px;
   height: 48px;
   position: absolute;
-  background-image: url("/img/quotes.svg");
+  background-image: url("../img/quotes.svg");
   background-repeat: no-repeat;
   background-size: cover;
   left: 0;
@@ -903,7 +909,7 @@ template {
   width: 70px;
   height: 48px;
   position: absolute;
-  background-image: url("/img/quotes.svg");
+  background-image: url("../img/quotes.svg");
   background-repeat: no-repeat;
   background-size: cover;
   right: 0;
@@ -918,6 +924,9 @@ template {
   margin-top: -45px;
   margin-bottom: 32px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .review-text {
@@ -927,12 +936,6 @@ template {
   line-height: 160%;
   /* or 19px */
   text-align: justify;
-}
-
-.author {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .author-avatar {
