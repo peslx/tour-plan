@@ -32,10 +32,22 @@
       padding-bottom: 30px
   .slider
     width: 100%
+    &-button
+      &:hover
+        background-color: $accent-color-transp
+        box-shadow: none
   .booking
     width: 340px
   .map
     width: 340px
+  .review
+    &-container
+      max-width: 580px
+      padding: 0 64px 30px 64px
+      &::before
+        margin-left: 80px
+      &::after
+        margin-right: 80px
 
 @media screen and ( max-width: 768px )
   .container
@@ -49,6 +61,10 @@
   .slider
     // width: 728px
     height: 350px
+    &-button
+      &:hover
+        background-color: $accent-color-transp
+        box-shadow: none
   .hotel
     &-grid
       min-height: 450px
@@ -65,7 +81,22 @@
       justify-content: space-between
     &__subscribe
       margin-left: 20px
-
+  .review
+    &-container
+      &::before, &::after
+        display: none
+  .reviews
+    position: relative
+    &-slider
+      &__button
+        top: 225px
+        &--prev
+          margin-left: 15px
+        &--next
+          margin-rigt: 15px
+  .section-title
+    font-size: 30px
+    margin-bottom: 50px
 
 @media screen and ( max-width: 576px )
   .container
@@ -122,7 +153,6 @@
     width: auto
     flex-basis: auto
     margin-left: auto
-    margin-right: 15px
   .logo
     width: 99px
   .slider
@@ -145,4 +175,24 @@
       margin: 0
   .subscribe
     width: 100%
+  .review
+    &-container
+      max-width: 280px
+      padding: 0 32px 36px 32px
+  .reviews
+    &-slider
+      position: relative
+      &__button
+        margin: 0
+        top: 45px
+        left: 50%
+        transform: translateX(-50%)
+        &--prev
+          margin-left: -85px
+        &--next
+          margin-left: 85px
+  .section-title
+    font-size: 18px
+    margin-bottom: 42px
+
   

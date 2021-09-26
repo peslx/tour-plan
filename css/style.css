@@ -854,7 +854,7 @@ template {
 .reviews-slider__button {
   position: absolute;
   z-index: 100;
-  top: 50%;
+  top: 260px;
   border: none;
   width: 30px;
   height: 30px;
@@ -888,6 +888,7 @@ template {
   padding: 0 95px 30px 95px;
   border-radius: 8px;
   background-color: #fff;
+  position: relative;
 }
 
 .review-container::before {
@@ -1011,11 +1012,25 @@ template {
   .slider {
     width: 100%;
   }
+  .slider-button:hover {
+    background-color: #ec1f447c;
+    box-shadow: none;
+  }
   .booking {
     width: 340px;
   }
   .map {
     width: 340px;
+  }
+  .review-container {
+    max-width: 580px;
+    padding: 0 64px 30px 64px;
+  }
+  .review-container::before {
+    margin-left: 80px;
+  }
+  .review-container::after {
+    margin-right: 80px;
   }
 }
 
@@ -1031,6 +1046,10 @@ template {
   }
   .slider {
     height: 350px;
+  }
+  .slider-button:hover {
+    background-color: #ec1f447c;
+    box-shadow: none;
   }
   .hotel-grid {
     min-height: 450px;
@@ -1048,6 +1067,25 @@ template {
   }
   .newsletter__subscribe {
     margin-left: 20px;
+  }
+  .review-container::before, .review-container::after {
+    display: none;
+  }
+  .reviews {
+    position: relative;
+  }
+  .reviews-slider__button {
+    top: 225px;
+  }
+  .reviews-slider__button--prev {
+    margin-left: 15px;
+  }
+  .reviews-slider__button--next {
+    margin-rigt: 15px;
+  }
+  .section-title {
+    font-size: 30px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1114,7 +1152,6 @@ template {
     width: auto;
     flex-basis: auto;
     margin-left: auto;
-    margin-right: 15px;
   }
   .logo {
     width: 99px;
@@ -1144,5 +1181,28 @@ template {
   }
   .subscribe {
     width: 100%;
+  }
+  .review-container {
+    max-width: 280px;
+    padding: 0 32px 36px 32px;
+  }
+  .reviews-slider {
+    position: relative;
+  }
+  .reviews-slider__button {
+    margin: 0;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .reviews-slider__button--prev {
+    margin-left: -85px;
+  }
+  .reviews-slider__button--next {
+    margin-left: 85px;
+  }
+  .section-title {
+    font-size: 18px;
+    margin-bottom: 42px;
   }
 }
