@@ -12,6 +12,8 @@
       gap: 20px
   .card
     flex-basis: 48.5%
+    &__title
+      max-width: 300px
 
 @media screen and ( max-width: 992px )
   .container, .newsletter-wrapper
@@ -58,6 +60,9 @@
         margin-left: 80px
       &::after
         margin-right: 80px
+  .card
+    &__title
+      max-width: 300px
 
 @media screen and ( max-width: 768px )
   .container
@@ -121,6 +126,8 @@
     flex-basis: 47.5% 
     max-width: 340px
     min-width: 235px
+    &__title
+      max-width: 200px
 
 
 @media screen and ( max-width: 576px )
@@ -235,7 +242,7 @@
       align-items: center
       gap: 20px
   .card
-    flex-basis: content
+    flex-basis: auto
     min-width: 280px
     width: 100%
     max-width: 100%
