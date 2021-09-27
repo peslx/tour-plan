@@ -744,6 +744,11 @@ template {
   overflow: hidden;
 }
 
+.package {
+  width: 350px;
+  height: 500px;
+}
+
 .newsletter {
   padding: 98px 0 87px 0;
   background-repeat: no-repeat;
