@@ -24,11 +24,6 @@ const reviewsSlider = new Swiper(".reviews-slider", {
   },
 });
 
-// $.stellar({
-//   horizontalOffset: 50,
-//   verticalOffset: 0,
-//   responsive: true,
-// });
-
 $(".parallax-window").parallax({ imageSrc: "../img/newsletter.jpg" });
+
 jQuery(window).trigger("resize").trigger("scroll");
