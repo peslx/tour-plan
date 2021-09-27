@@ -3,6 +3,16 @@
     max-width: 960px
   .slider
     width: 600px
+  .activities
+    padding: 60px 0 70px 0
+    &-wrapper
+      flex-wrap: wrap
+      justify-content: space-around
+      align-items: center
+      gap: 20px
+  .card
+    flex-basis: 48.5%
+
 @media screen and ( max-width: 992px )
   .container, .newsletter-wrapper
     max-width: 700px
@@ -90,6 +100,8 @@
   .reviews
     position: relative
     &-slider
+      &__wrapper
+        margin-bottom: 60px
       &__button
         top: 225px
         &--prev
@@ -98,7 +110,18 @@
           margin-rigt: 15px
   .section-title
     font-size: 30px
-    margin-bottom: 50px
+    pading-bottom: 50px
+  .activities
+    padding: 35px
+    &__header
+      font-size: 24px
+      line-height: 30px
+    &-wrapper
+  .card
+    flex-basis: 47.5% 
+    max-width: 340px
+    min-width: 235px
+
 
 @media screen and ( max-width: 576px )
   .container
@@ -200,5 +223,21 @@
     font-size: 18px
     line-height: 23px
     margin-bottom: 42px
+  .activities
+    padding: 40px 0
+    &__header
+      font-size: 18px
+      line-height: 23px
+      padding: 0 0 40px 0
+      margin: 0
+    &-wrapper
+      flex-flow: column wrap
+      align-items: center
+      gap: 20px
+  .card
+    flex-basis: content
+    min-width: 280px
+    width: 100%
+    max-width: 100%
 
   

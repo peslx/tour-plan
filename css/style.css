@@ -989,8 +989,11 @@ template {
 }
 
 .card {
+  min-width: 255px;
+  min-height: 255px;
   width: 255px;
   height: 255px;
+  max-height: 255px;
   position: relative;
   border-radius: 6px;
   overflow: hidden;
@@ -1051,6 +1054,18 @@ template {
   }
   .slider {
     width: 600px;
+  }
+  .activities {
+    padding: 60px 0 70px 0;
+  }
+  .activities-wrapper {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+  .card {
+    flex-basis: 48.5%;
   }
 }
 
@@ -1155,6 +1170,9 @@ template {
   .reviews {
     position: relative;
   }
+  .reviews-slider__wrapper {
+    margin-bottom: 60px;
+  }
   .reviews-slider__button {
     top: 225px;
   }
@@ -1166,7 +1184,19 @@ template {
   }
   .section-title {
     font-size: 30px;
-    margin-bottom: 50px;
+    pading-bottom: 50px;
+  }
+  .activities {
+    padding: 35px;
+  }
+  .activities__header {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .card {
+    flex-basis: 47.5%;
+    max-width: 340px;
+    min-width: 235px;
   }
 }
 
@@ -1290,6 +1320,26 @@ template {
     font-size: 18px;
     line-height: 23px;
     margin-bottom: 42px;
+  }
+  .activities {
+    padding: 40px 0;
+  }
+  .activities__header {
+    font-size: 18px;
+    line-height: 23px;
+    padding: 0 0 40px 0;
+    margin: 0;
+  }
+  .activities-wrapper {
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 20px;
+  }
+  .card {
+    flex-basis: content;
+    min-width: 280px;
+    width: 100%;
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
