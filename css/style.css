@@ -746,7 +746,6 @@ template {
 
 .newsletter {
   padding: 98px 0 87px 0;
-  background-image: url(../img/newsletter.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -933,6 +932,9 @@ template {
 
 .review-text {
   max-width: 537px;
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 5px;
   font-weight: normal;
   font-size: 12px;
   line-height: 160%;
@@ -1191,6 +1193,9 @@ template {
     max-width: 280px;
     padding: 0 32px 36px 32px;
   }
+  .review-text {
+    max-height: 300px;
+  }
   .reviews-slider {
     position: relative;
   }
@@ -1208,6 +1213,8 @@ template {
   }
   .section-title {
     font-size: 18px;
+    line-height: 23px;
     margin-bottom: 42px;
   }
 }
+/*# sourceMappingURL=style.css.map */

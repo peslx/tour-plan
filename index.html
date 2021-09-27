@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://code.jquery.com/jquery-1.11.3.min.js" defer></script>
-    <script src="scripts/jquery.stellar.min.js" defer></script>
+    <script src="scripts/parallax.min.js" defer></script>
+    <!-- <script src="scripts/jquery.stellar.min.js" defer></script> -->
     <script src="scripts/swiper-bundle.min.js" defer></script>
     <script src="scripts/main.js" defer></script>
   </head>
@@ -252,9 +253,11 @@
     <!-- /.hotel -->
 
     <section
-      class="newsletter"
+      class="newsletter parallax-window"
       id="parallaxed"
       data-stellar-background-ratio="0.5"
+      data-parallax="scroll"
+      data-image-src="../img/newsletter.jpg"
     >
       <div class="newsletter-wrapper">
         <h2 class="newsletter-title">
@@ -276,7 +279,7 @@
 
     <section class="reviews">
       <div class="container">
-        <h2 class="section-title">What people think about us</h2>
+        <h2 class="section-title">What people think about&nbsp;us</h2>
         <!-- /.section-title -->
 
         <div class="swiper reviews-slider">
