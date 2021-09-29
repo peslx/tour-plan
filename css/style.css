@@ -1537,4 +1537,7 @@ template {
     width: 100%;
     max-width: 100%;
   }
+  .card:nth-child(2n) {
+    order: 1;
+  }
 }
