@@ -600,11 +600,14 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="img/logo-vertical.svg"
-            alt="Logo: Best Tour Plan"
-            class="logo footer__logo"
-          />
+          <div class="logo">
+            <img
+              src="img/logo-vertical.svg"
+              alt="Logo: Best Tour Plan"
+              class="footer__logo"
+            />
+          </div>
+          <!-- /.logo -->
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -702,11 +705,11 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__contact-details">
-            <h3 class="footer__title footer__title--inline">Contact Details</h3>
+            <h3 class="footer__title">Contact Details</h3>
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
             </p>
-            <ul class="footer__ul">
+            <ul class="footer__ul footer__ul--spread">
               <li class="footer__item">
                 <img src="img/footer/map.svg" alt="Icon: map"  class="footer__icon" />9748 Blossom
                 Hill Rd undefined Lansing, Idaho 68545 United States
@@ -729,7 +732,7 @@
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title"></h3>
+            <h3 class="footer__title">Send us a message</h3>
             <form action="" class="footer__form">
               <input
                 type="text"
@@ -753,15 +756,29 @@
                 class="footer__msg"
                 placeholder="Message"
               ></textarea>
-
-              <button class="footer__button" type="submit">Send</button>
-
-              <span class="footer__required">* Required Fields</span>
+              <div class="footer__form__bottom">
+                <button class="footer__button" type="submit">Send</button>
+                <span class="footer__required">* Required Fields</span>
+              </div>
+              <!-- /.footer__form__bottom -->
             </form>
           </div>
           <!-- /.footer__contact-form -->
         </div>
         <!-- /.footer-wrapper -->
+        <div class="footer__bottom">
+          <div class="footer__bottom-links">
+            <div class="footer__item"><a href="#" class="footer__link">Disclaimer</a></div>
+            <div class="footer__item"><a href="#" class="footer__link">Conditions of use</a></div>
+            <div class="footer__item"><a href="#" class="footer__link">Cancellation policy</a></div>
+          </div>
+          <!-- /.footer__bottom-links -->
+          <div class="footer__bottom-payments">
+            <img src="img/footer/payments.png" alt="Image: Payments" class="footer__bottom-payments__img">
+          </div>
+          <!-- /.footer__bottom_pay-services -->
+        </div>
+        <!-- /.footer__bottom -->
       </div>
       <!-- /.container -->
     </footer>
