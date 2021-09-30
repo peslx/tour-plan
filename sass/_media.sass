@@ -28,7 +28,6 @@
       padding: 30px 0
     &__search
       margin-left: auto
-      // max-width: 340px
     &-menu
       padding: 22px 0
       &__link
@@ -66,7 +65,6 @@
   .card
     &__title
       max-width: 300px
-
   .footer
     padding: 73px 0 33px 0
     &-wrapper
@@ -103,18 +101,67 @@
       &-payments
         display: none
 
-
 @media screen and ( max-width: 768px )
+  body
+    padding-top: 78px
   .container
     max-width: 98%
-    // padding: 0 20px
+  .navbar
+    &--mobile
+      &--fixed
+        position: fixed
+        left: 0
+        right: 0
+        top: 0
+        z-index: 99
+    &__user
+      &--mobile
+        display: flex
+        flex-direction: column
+    &-top
+      &__menu-button
+        position: fixed
+        display: flex
+        top: 30px
+        right: 20px
+        width: 16px
+        height: 11px
+        padding: 0
+        margin: 0
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        gap: 4px
+        cursor: pointer
+        z-index: 100
+    &__search, &__user
+      &--mobile
+        &--hidden
+          display: none
+    &-bottom
+      display: none
+      &--visible
+        display: flex
+    &-menu
+      display: flex
+      flex-direction: column
+      gap: 20px
+      &__item
+        &--mobile
+          &--visible
+            display: flex
+  .user
+    &__name
+      &--mobile
+        color: $light
+        margin: 0
+        margin-top: 10px
   .search
     &__input
       width: 300px
   .logo
     width: 122px
   .slider
-    // width: 728px
     height: 350px
     &-button
       &:hover
@@ -124,7 +171,6 @@
     &-grid
       min-height: 450px
       &__info
-        // flex-direction: column
   .booking
     width: 100%
   .map
@@ -179,27 +225,6 @@
   .container
     min-width: 320px
     padding: 0 20px
-  .menu
-    &-button
-        display: flex
-        width: 16px
-        height: 11px
-        padding: 0
-        margin: 0
-        justify-content: center
-        align-items: center
-        flex-direction: column
-        gap: 4px
-        cursor: pointer
-        &__line
-          width: 16px
-          height: 1px
-          background-color: $text-color
-  .navbar
-    &__search, &-menu, &__user
-      display: none
-    // &-top
-    //   &__menu-button
   .hotel
     padding: 0
     &-slider

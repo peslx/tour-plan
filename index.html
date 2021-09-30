@@ -24,7 +24,7 @@
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="" class="logo">
@@ -35,7 +35,10 @@
             />
           </a>
 
-          <form action="#" class="search navbar__search">
+          <form
+            action="#"
+            class="search navbar__search navbar__search--mobile--hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -46,7 +49,7 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
             <img
               src="img/avatar-Nathan.jpg"
               alt="Avatar: Nathan"
@@ -55,7 +58,7 @@
             <span class="user__name">Nathan</span>
           </a>
           <!-- /.user -->
-          <div class="menu-button navbar-top__menu-button">
+          <div class="menu-button navbar-top__menu-button" id="burger">
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
@@ -68,6 +71,30 @@
       <div class="navbar-bottom">
         <div class="container">
           <nav class="navbar-menu">
+            <div class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <a href="#" class="user navbar__user navbar__user--mobile">
+                <img
+                  src="img/avatar-Nathan.jpg"
+                  alt="Avatar: Nathan"
+                  class="user__avatar"
+                />
+                <span class="user__name user__name--mobile">Nathan</span>
+              </a>
+              <!-- /.user -->
+            </div>
+            <div class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <form action="#" class="search navbar__search">
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                />
+                <button class="search__button">
+                  <img src="img/icon-search.svg" alt="Icon: search" />
+                </button>
+              </form>
+            </div>
+
             <div class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </div>

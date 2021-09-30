@@ -24,6 +24,14 @@ const reviewsSlider = new Swiper(".reviews-slider", {
   },
 });
 
+const burger = $("#burger");
+burger.click((e) => {
+  // console.log($(".navbar-bottom"));
+  $(".menu-button").toggleClass("menu-button--active");
+  $(".menu-button__line").toggleClass("menu-button__line--active");
+  $(".navbar-bottom").toggleClass("navbar-bottom--visible");
+});
+
 $(".parallax-window").parallax({ imageSrc: "img/newsletter.jpg" });
 
 jQuery(window).trigger("resize").trigger("scroll");
