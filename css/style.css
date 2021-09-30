@@ -1130,11 +1130,11 @@ template {
   min-width: 493px;
   display: flex;
   flex-direction: column;
-  gap: 22px;
 }
 
 .footer__text {
   margin: 0;
+  margin-top: 10px;
   padding: 0;
   font-size: 14px;
   line-height: 22px;
@@ -1166,7 +1166,6 @@ template {
 .footer__ul--spread {
   display: flex;
   flex-direction: column;
-  gap: 22px;
 }
 
 .footer__item {
@@ -1175,6 +1174,10 @@ template {
   line-height: 22px;
   color: #BDBDBD;
   display: flex;
+}
+
+.footer__item--spread {
+  margin-top: 22px;
 }
 
 .footer__link {
@@ -1193,7 +1196,6 @@ template {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  gap: 15px;
   font-size: 12px;
   line-height: 15px;
 }
@@ -1214,6 +1216,7 @@ template {
   font-weight: normal;
   border-radius: 4px;
   padding: 18px 23px;
+  margin-bottom: 15px;
 }
 
 .footer__msg {
@@ -1253,8 +1256,11 @@ template {
 
 .footer__bottom-links {
   display: flex;
-  gap: 15px;
   margin: 0 auto;
+}
+
+.footer__bottom-link {
+  margin: 0 8px;
 }
 
 .footer__bottom-payments__img {
@@ -1734,7 +1740,12 @@ template {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
-    gap: 15px;
+  }
+  .footer__button {
+    margin-top: 15px;
+  }
+  .footer__required {
+    margin-top: 15px;
   }
   .footer__bottom-links {
     width: 100%;
