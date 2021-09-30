@@ -470,7 +470,7 @@ template {
 }
 
 .menu-button__line--active:nth-child(1) {
-  transform: rotateZ(40deg);
+  transform: rotateZ(39deg);
   transform-origin: left;
 }
 
@@ -479,7 +479,7 @@ template {
 }
 
 .menu-button__line--active:nth-child(3) {
-  transform: rotateZ(-40deg);
+  transform: rotateZ(-39deg);
   transform-origin: left;
 }
 
