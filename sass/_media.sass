@@ -106,6 +106,8 @@
     padding-top: 78px
   .container
     max-width: 98%
+    &--mobile
+      margin-top: 0
   .navbar
     &--mobile
       &--fixed
@@ -133,7 +135,7 @@
         flex-direction: column
         gap: 4px
         cursor: pointer
-        z-index: 100
+        z-index: 200
     &__search, &__user
       &--mobile
         &--hidden
@@ -142,6 +144,9 @@
       display: none
       &--visible
         display: flex
+        position: fixed
+        height: 100%
+        width: 100%
     &-menu
       display: flex
       flex-direction: column

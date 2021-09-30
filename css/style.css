@@ -887,7 +887,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  z-index: 100;
+  z-index: 10;
   top: 260px;
   border: none;
   width: 30px;
@@ -1407,6 +1407,9 @@ template {
   .container {
     max-width: 98%;
   }
+  .container--mobile {
+    margin-top: 0;
+  }
   .navbar--mobile--fixed {
     position: fixed;
     left: 0;
@@ -1432,7 +1435,7 @@ template {
     flex-direction: column;
     gap: 4px;
     cursor: pointer;
-    z-index: 100;
+    z-index: 200;
   }
   .navbar__search--mobile--hidden, .navbar__user--mobile--hidden {
     display: none;
@@ -1442,6 +1445,9 @@ template {
   }
   .navbar-bottom--visible {
     display: flex;
+    position: fixed;
+    height: 100%;
+    width: 100%;
   }
   .navbar-menu {
     display: flex;
