@@ -351,13 +351,19 @@
           subscribe to our
           <span class="newsletter-title__heading">Newsletter</span>
         </h2>
-        <form action="#" class="subscribe newsletter__subscribe">
+        <form
+          action="#"
+          method="POST"
+          class="subscribe newsletter__subscribe"
+          onsubmit="send(event, 'send.php')"
+        >
           <input
             type="text"
             class="subscribe__input"
             placeholder="Your email address"
+            name="email"
           />
-          <button class="subscribe__button">Send</button>
+          <button class="subscribe__button" type="submit">Send</button>
         </form>
       </div>
       <!-- /.newsletter-wrapper -->
@@ -760,26 +766,38 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title">Send us a message</h3>
-            <form action="#" class="footer__form">
+            <form
+              action="#"
+              method="POST"
+              class="footer__form"
+              onsubmit="send(event, 'send.php')"
+            >
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Your Full Name*"
+                name="name"
               />
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Phone Number*"
+                name="phone"
               />
               <textarea
                 cols="30"
                 rows="10"
-                class="footer__msg"
+                class="message footer__msg"
                 placeholder="Message"
+                name="msg"
               ></textarea>
               <div class="footer__form__bottom">
-                <button class="footer__button" type="submit">Send</button>
-                <span class="footer__required">* Required Fields</span>
+                <button class="footer__button form__button" type="submit">
+                  Send
+                </button>
+                <span class="footer__required form__required"
+                  >* Required Fields</span
+                >
               </div>
               <!-- /.footer__form__bottom -->
             </form>
@@ -820,5 +838,62 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
+
+    <div class="modal">
+      <div class="modal__wrapper"></div>
+      <!-- /.modal__wrapper -->
+      <div class="modal__window">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: close" />
+        </a>
+        <div class="modal__contact-form">
+          <h3 class="modal__title">Booking</h3>
+          <form
+            action="#"
+            method="POST"
+            class="modal__form"
+            onsubmit="send(event, 'send.php')"
+          >
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Your Full Name*"
+              name="name"
+            />
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Phone Number*"
+              name="phone"
+            />
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Email*"
+              name="email"
+            />
+            <textarea
+              cols="30"
+              rows="10"
+              class="message modal__msg"
+              placeholder="Message"
+              name="msg"
+            ></textarea>
+            <div class="modal__form__bottom">
+              <button class="modal__button form__button" type="submit">
+                Send
+              </button>
+              <span class="modal__required form__required"
+                >* Required Fields</span
+              >
+            </div>
+            <!-- /.modal__form__bottom -->
+          </form>
+        </div>
+        <!-- /.modal__contact-form -->
+      </div>
+      <!-- /.modal__window -->
+    </div>
+    <!-- /.modal -->
   </body>
 </html>
