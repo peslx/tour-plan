@@ -7,6 +7,8 @@
     bottom: 0
     background-color: $overlay
     z-index: 125
+    opacity: 0
+    visibility: hidden
   &__window
     position: fixed
     z-index: 130
@@ -19,6 +21,13 @@
     transform: translate(-50%, -50%)
     background-color: $dark
     color: $light
+    opacity: 0
+    visibility: hidden
+  &__wrapper, &__window
+    &--visible
+      opacity: 1
+      visibility: visible
+
   &__close
     position: absolute
     top: 17px

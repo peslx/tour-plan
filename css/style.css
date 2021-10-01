@@ -1293,6 +1293,8 @@ template {
   bottom: 0;
   background-color: rgba(0, 143, 223, 0.39);
   z-index: 125;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .modal__window {
@@ -1307,6 +1309,13 @@ template {
   transform: translate(-50%, -50%);
   background-color: #0A223D;
   color: #fff;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal__wrapper--visible, .modal__window--visible {
+  opacity: 1;
+  visibility: visible;
 }
 
 .modal__close {

@@ -24,16 +24,7 @@ const reviewsSlider = new Swiper(".reviews-slider", {
   },
 });
 
-const burger = $("#burger");
-burger.click((e) => {
-  // console.log($(".navbar-bottom"));
-  $(".menu-button").toggleClass("menu-button--active");
-  $(".menu-button__line").toggleClass("menu-button__line--active");
-  $(".navbar-bottom").toggleClass("navbar-bottom--visible");
-});
-
 $(".parallax-window").parallax({ imageSrc: "img/newsletter.jpg" });
-
 jQuery(window).trigger("resize").trigger("scroll");
 
 function send(event, php) {
@@ -66,3 +57,34 @@ function send(event, php) {
   };
   req.send(new FormData(event.target));
 }
+
+$(document).ready(function () {
+  const burger = $("#burger");
+  burger.click((e) => {
+    // console.log($(".navbar-bottom"));
+    $(".menu-button").toggleClass("menu-button--active");
+    $(".menu-button__line").toggleClass("menu-button__line--active");
+    $(".navbar-bottom").toggleClass("navbar-bottom--visible");
+  });
+
+  let modalBtn = $("[data-toggle=modal]");
+  const closeBtn = $(".modal__close");
+  const modalWrapper = $(".modal__wrapper");
+  const modalWindow = $(".modal__window");
+  modalBtn.click(() => {
+    modalWrapper.addClass("modal__wrapper--visible");
+    modalWindow.addClass("modal__window--visible");
+  });
+
+  closeBtn.click(() => {
+    modalWrapper.removeClass("modal__wrapper--visible");
+    modalWindow.removeClass("modal__window--visible");
+  });
+
+  $(document).keydown(function (e) {
+    if (e.key === "Escape") {
+      modalWrapper.removeClass("modal__wrapper--visible");
+      modalWindow.removeClass("modal__window--visible");
+    }
+  });
+});
