@@ -847,28 +847,29 @@ template {
 }
 
 .package__img {
-  height: 50%;
   object-fit: cover;
+  min-height: 250px;
+  height: 50%;
 }
 
 .package__img--active {
-  height: 100%;
   width: 50%;
+  height: 100%;
 }
 
 .package__content {
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 50%;
   background-color: #0A223D;
   color: #fff;
   padding: 30px 25px 25px 25px;
 }
 
 .package__content--active {
-  height: 100%;
   width: 50%;
+  height: 100%;
   padding: 46px 21px 30px 44px;
 }
 
@@ -1826,8 +1827,8 @@ template {
     width: 100%;
   }
   .package__img {
-    height: 70%;
     object-fit: cover;
+    height: 70%;
   }
   .package__img--active {
     height: 100%;
@@ -1835,16 +1836,16 @@ template {
   }
   .package__content {
     width: 100%;
-    flex-direction: row;
     height: 30%;
+    flex-direction: row;
     background-color: #0A223D;
     color: #fff;
     padding: 15px 25px 15px 25px;
   }
   .package__content--active {
     flex-direction: column;
-    height: 100%;
     width: 50%;
+    height: 100%;
     padding: 26px 20px 30px 20px;
   }
   .package-description__text--active {
@@ -1997,42 +1998,36 @@ template {
   }
   .package--active {
     width: 100%;
-    height: min-content;
+    height: auto;
     flex-direction: column;
   }
   .package__title {
     margin-bottom: 20px;
   }
   .package__img {
-    height: 70%;
+    max-height: 350px;
   }
   .package__img--active {
-    height: 50%;
-    max-height: 400px;
+    height: auto;
+    max-height: 350px;
     width: 100%;
   }
   .package__content {
-    height: 30%;
     flex-flow: row wrap;
-    height: fit-content;
+    height: auto;
   }
   .package__content--active {
     flex-direction: column;
-    height: fit-content;
     width: 100%;
     padding: 26px 20px 20px 20px;
   }
   .package-description__text--active {
     width: 100%;
-    height: fit-content;
     margin-bottom: 10px;
     margin-top: -10px;
   }
   .package-booking {
     margin-top: -60px;
-  }
-  .package-booking--active {
-    align-self: flex-end;
   }
   .newsletter {
     background-size: 360%;
