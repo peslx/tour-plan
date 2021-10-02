@@ -2005,11 +2005,11 @@ template {
     margin-bottom: 20px;
   }
   .package__img {
-    max-height: 350px;
+    max-height: 250px;
   }
   .package__img--active {
     height: auto;
-    max-height: 350px;
+    max-height: 250px;
     width: 100%;
   }
   .package__content {
