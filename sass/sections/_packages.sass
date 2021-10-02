@@ -8,10 +8,10 @@
     row-gap: 30px 
     column-gap: 30px
   &__title
-    grid-column: 1 / 4
+    grid-column: span 3
     height: min-content
   &__item
-    transition: all .3s ease-in-out
+    // transition: all .3s ease-in-out
 .package
   width: 350px
   height: 500px
@@ -31,6 +31,9 @@
       height: 100%
       width: 50%
   &__content
+    display: flex
+    flex-direction: column
+    justify-content: space-between
     height: 50%
     background-color: $dark
     color: $light
@@ -65,6 +68,7 @@
   &-features
     display: flex
     flex-direction: column
+    height: 100%
     font-size: 12px
     line-height: 15px
     &--active

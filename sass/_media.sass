@@ -14,6 +14,20 @@
     flex-basis: 48.5%
     &__title
       max-width: 300px
+  .packages
+    display: flex
+    &-wrapper
+      grid-template-columns: repeat(2, minmax(min-content, 1fr))
+      column-gap: none
+      width: 730px
+      align-self: center
+    &__item
+      grid-column: 1
+    &__title
+      grid-column: span 2
+  .package
+    &--active
+      grid-column: span 2
   .footer
     &__input
       flex-basis: 100%
@@ -65,6 +79,17 @@
   .card
     &__title
       max-width: 300px
+  .packages
+    &-wrapper
+      width: 700px
+    &__title
+      margin: 20px 0
+  .package
+    width: 335px
+    &--active
+      grid-column: span 2
+      width: 700px
+
   .footer
     padding: 73px 0 33px 0
     &-wrapper
@@ -184,6 +209,56 @@
     width: 100%
   .map
     width: 100%
+
+  .packages
+    &-wrapper
+      width: 100%
+      grid-template-columns:  1fr
+    &__title
+      grid-column: 1
+  .package
+    grid-column: 1
+    width: 100%
+    &--active
+      width: 100%
+    &__img
+      height: 70%
+      object-fit: cover
+      &--active
+        height: 100%
+        width: 50%
+    &__content
+      width: 100%
+      flex-direction: row
+      height: 30%
+      background-color: $dark
+      color: $light
+      padding: 15px 25px 15px 25px
+      &--active
+        flex-direction: column
+        height: 100%
+        width: 50%
+        padding: 26px 20px 30px 20px
+    &-description
+      &__text
+        &--active
+          width: 240px
+          margin-bottom: 20px
+    &-features
+      &--active
+        margin: 0
+    &__info
+      width: 100%
+    &-booking
+      width: 100%
+      flex-direction: column
+      justify-content: space-between
+    &-price
+      align-self: flex-end
+      &__old
+        align-self: flex-end
+
+
   .newsletter
     background-size: 240%
     &-wrapper
@@ -241,6 +316,10 @@
   .container
     min-width: 320px
     padding: 0 20px
+  .section-title
+    font-size: 18px
+    line-height: 23px
+    margin-bottom: 22px
   .hotel
     padding: 0
     &-slider
@@ -275,6 +354,46 @@
     width: 99px
   .slider
     height: 250px
+
+  .packages
+    &-wrapper
+      padding: 20px 0
+  .package
+    height: auto
+    &--active
+      width: 100%
+      height: min-content
+      flex-direction: column
+    &__title
+      margin-bottom: 20px
+    &__img
+      height: 70%
+      &--active
+        height: 50%
+        max-height: 400px
+        width: 100%
+    &__content
+      height: 30%
+      flex-flow: row wrap
+      height: fit-content
+      &--active
+        flex-direction: column
+        height: fit-content
+        width: 100%
+        padding: 26px 20px 20px 20px
+    &-description
+      &__text
+        &--active
+          width: 100%
+          height: fit-content
+          margin-bottom: 10px
+          margin-top: -10px
+    &-booking
+      margin-top: -60px
+      &--active
+        align-self: flex-end
+
+
   .newsletter
     background-size: 360%
     padding: 76px 20px 83px 20px
@@ -312,10 +431,6 @@
           margin-left: -85px
         &--next
           margin-left: 85px
-  .section-title
-    font-size: 18px
-    line-height: 23px
-    margin-bottom: 42px
   .activities
     padding: 40px 0
     &__header
