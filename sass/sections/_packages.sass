@@ -1,7 +1,17 @@
 .packages
   &-wrapper
     padding: 40px 0 70px 0
-
+    display: grid
+    grid-template-columns: repeat(3, minmax(min-content, 1fr))
+    // grid-template-rows: repeat(3, minmax(min-content, 1fr))
+    grid-template-rows: repeat(3, min-content)
+    row-gap: 30px 
+    column-gap: 30px
+  &__title
+    grid-column: 1 / 4
+    height: min-content
+  &__item
+    transition: all .3s ease-in-out
 .package
   width: 350px
   height: 500px
@@ -10,18 +20,32 @@
   display: flex
   flex-direction: column
   position: relative
+  &--active
+    grid-column: span 2
+    width: 730px
+    flex-direction: row
   &__img
     height: 50%
     object-fit: cover
+    &--active
+      height: 100%
+      width: 50%
   &__content
     height: 50%
     background-color: $dark
     color: $light
     padding: 30px 25px 25px 25px
+    &--active
+      height: 100%
+      width: 50%
+      padding: 46px 21px 30px 44px    
   &__info
   &-header
   &-rank
     display: none
+    &--active
+      display: block
+      margin-bottom: 5px
   &-title
     font-weight: bold
     font-size: 18px
@@ -30,11 +54,21 @@
   &-description
     &__text
       display: none
+      &--active
+        display: block
+        margin-top: 10px
+        margin-bottom: 45px
+        font-weight: normal
+        font-size: 14px
+        line-height: 22px
+
   &-features
     display: flex
     flex-direction: column
     font-size: 12px
     line-height: 15px
+    &--active
+      margin-bottom: 37px
     &__address
       position: relative
       margin-left: 28px
@@ -111,6 +145,7 @@
     width: 60px
     height: 18px
     padding: 4px 9px
+    text-align: center
     font-style: normal
     font-weight: 600
     font-size: 8px
@@ -118,4 +153,11 @@
     background-color: $accent-color
     border-top-right-radius: 4px
     border-bottom-right-radius: 4px
+    &--active
+      width: 95px
+      height: 30px
+      font-size: 12px
+      line-height: 15px
+      padding: 8px 12px
+
     
