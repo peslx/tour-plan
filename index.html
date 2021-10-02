@@ -656,7 +656,6 @@
           action="send.php"
           method="POST"
           class="subscribe newsletter__subscribe"
-          onsubmit="send(event, 'send.php')"
         >
           <input
             type="text"
@@ -1149,12 +1148,7 @@
         </a>
         <div class="modal__contact-form form">
           <h3 class="modal__title">Booking</h3>
-          <form
-            action="send.php"
-            method="POST"
-            class="modal__form"
-            onsubmit="send(event, 'send.php')"
-          >
+          <form action="send.php" method="POST" class="modal__form">
             <input
               type="text"
               class="input modal__input"
