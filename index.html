@@ -60,6 +60,8 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+
     <script src="https://code.jquery.com/jquery-1.11.3.min.js" defer></script>
     <script src="scripts/parallax.min.js" defer></script>
     <script src="scripts/swiper-bundle.min.js" defer></script>
@@ -67,12 +69,13 @@
 
     <script src="scripts/jquery.validate.min.js" defer></script>
     <script src="scripts/jquery.mask.min.js" defer></script>
+    <script src="scripts/aos.js" defer></script>
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
     <header class="navbar navbar--mobile--fixed">
       <div class="container">
-        <div class="navbar-top">
+        <div class="navbar-top" data-aos="fade-right" data-aos-delay="200">
           <a href="" class="logo">
             <img
               src="img/logo-horizontal.svg"
@@ -84,6 +87,8 @@
           <form
             action="#"
             class="search navbar__search navbar__search--mobile--hidden"
+            data-aos="fade-right"
+            data-aos-delay="400"
           >
             <input
               type="text"
@@ -95,7 +100,12 @@
             </button>
           </form>
 
-          <a href="##" class="user navbar__user navbar__user--mobile--hidden">
+          <a
+            href="##"
+            class="user navbar__user navbar__user--mobile--hidden"
+            data-aos="fade-right"
+            data-aos-delay="600"
+          >
             <img
               src="img/avatar-Nathan.jpg"
               alt="Avatar: Nathan"
@@ -185,7 +195,7 @@
     <!-- /.breadcrumb -->
     <section class="hotel">
       <div class="container">
-        <div class="hotel-info">
+        <div class="hotel-info" data-aos="fade-left" data-aos-delay="200">
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
               <div class="stars">
@@ -212,7 +222,7 @@
           <!-- /.hotel-info__raiting -->
         </div>
         <!-- /.hotel-info -->
-        <div class="hotel-grid">
+        <div class="hotel-grid" data-aos="fade-left" data-aos-delay="400">
           <div class="slider hotel-slider">
             <!-- Slider main container -->
             <div class="swiper hotel-swiper">
@@ -257,7 +267,7 @@
           </div>
           <!-- /.slider hotel-slider -->
           <div class="hotel-grid__info">
-            <div class="booking">
+            <div class="booking" data-aos="fade-left" data-aos-delay="600">
               <div class="booking__info">
                 <div class="booking__price">
                   <span class="booking__start">price starts as</span>
@@ -301,7 +311,7 @@
               </button>
             </div>
             <!-- /.booking -->
-            <div class="map">
+            <div class="map" data-aos="fade-left" data-aos-delay="800">
               <!-- <iframe
                 src="https://yandex.ru/map-widget/v1/?um=constructor%3Aae4f74a16c3822c7b6b9862ecd5842de810c9765b3b29ac3c7db70e69141f1fc&amp;source=constructor"
                 style="width: 100%; height: 210px; border: 0"
@@ -328,7 +338,10 @@
         <div class="packages-wrapper">
           <h2 class="section-title packages__title">Other Packages</h2>
           <!-- ///PACKAGES -->
-          <div class="package packages__item package--active">
+          <div
+            class="package packages__item package--active"
+            data-aos="fade-up"
+          >
             <img
               src="img/booking/packages/Hotel_Blue_Haven.jpg"
               alt="Hotel Blue Haven"
@@ -396,7 +409,7 @@
             <!-- /.package__content -->
           </div>
           <!-- /.package -->
-          <div class="package">
+          <div class="package" data-aos="fade-up">
             <img
               src="img/booking/packages/Belle_Mare.jpg"
               alt="LUX* Belle Mare"
@@ -458,7 +471,7 @@
           </div>
           <!-- /.package -->
 
-          <div class="package">
+          <div class="package" data-aos="fade-up">
             <img
               src="img/booking/packages/White_Palace.jpg"
               alt="White Palace"
@@ -519,7 +532,7 @@
             <!-- /.package__content -->
           </div>
           <!-- /.package -->
-          <div class="package">
+          <div class="package" data-aos="fade-up">
             <img
               src="img/booking/packages/Luxury_Place.jpg"
               alt="Luxury Place"
@@ -580,7 +593,7 @@
             <!-- /.package__content -->
           </div>
           <!-- /.package -->
-          <div class="package">
+          <div class="package" data-aos="fade-up">
             <img
               src="img/booking/packages/Hotel_Five_Star.jpg"
               alt="Hotel Five Star"
@@ -652,7 +665,7 @@
     <section class="newsletter parallax-window" data-parallax="scroll">
       <!-- data-image-src="../img/newsletter.jpg" -->
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-title">
+        <h2 class="newsletter-title" data-aos="fade-right" data-aos-delay="300">
           subscribe to our
           <span class="newsletter-title__heading">Newsletter</span>
         </h2>
@@ -660,6 +673,8 @@
           action="send.php"
           method="POST"
           class="subscribe newsletter__subscribe validate-form"
+          data-aos="fade-right"
+          data-aos-delay="600"
         >
           <input
             type="email"
@@ -676,7 +691,7 @@
     <!-- /.newsletter -->
 
     <section class="reviews">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <h2 class="section-title">What people think about&nbsp;us</h2>
         <!-- /.section-title -->
 
@@ -861,9 +876,15 @@
 
     <section class="activities">
       <div class="container">
-        <h2 class="activities__header">Other activities</h2>
+        <h2
+          class="activities__header"
+          data-aos="fade-down"
+          data-aos-delay="100"
+        >
+          Other activities
+        </h2>
         <div class="activities-wrapper">
-          <div class="card">
+          <div class="card" data-aos="fade-down" data-aos-delay="200">
             <img
               src="img/activities/01.jpg"
               alt="The curious corner of chamarel"
@@ -878,7 +899,7 @@
             <!-- /.card__content -->
           </div>
           <!-- /.card -->
-          <div class="card">
+          <div class="card" data-aos="fade-down" data-aos-delay="300">
             <img
               src="img/activities/02.jpg"
               alt="Gymkhana club golf course"
@@ -893,7 +914,7 @@
             <!-- /.card__content -->
           </div>
           <!-- /.card -->
-          <div class="card">
+          <div class="card" data-aos="fade-down" data-aos-delay="400">
             <img
               src="img/activities/03.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -910,7 +931,7 @@
             <!-- /.card__content -->
           </div>
           <!-- /.card -->
-          <div class="card">
+          <div class="card" data-aos="fade-down" data-aos-delay="500">
             <img
               src="img/activities/04.jpg"
               alt="The blue marine discovery quest"
@@ -1177,7 +1198,7 @@
             />
             <input
               type="tel"
-              class="input modal__input phone_with_ddd"
+              class="input modal__input"
               placeholder="Phone Number*"
               name="phone"
               required
