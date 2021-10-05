@@ -88,3 +88,27 @@ $(document).ready(function () {
     }
   });
 });
+
+$(".validate-form").each(function () {
+  $(this).validate({
+    errorClass: "invalid",
+    messages: {
+      name: {
+        required: "Please specify your name",
+        minlength: "Your name must contain at least two symbols",
+      },
+
+      phone: {
+        required: "Entering phone-number is necessary",
+      },
+
+      email: {
+        required: "We need your email to contact you",
+        // email: "Your email address must be in the format of name@domain.com",
+      },
+      msg: {
+        required: "Describe your problem or ask question",
+      },
+    },
+  });
+});

@@ -63,6 +63,10 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js" defer></script>
     <script src="scripts/parallax.min.js" defer></script>
     <script src="scripts/swiper-bundle.min.js" defer></script>
+    <!-- <script src="scripts/" defer></script> -->
+
+    <script src="scripts/jquery.validate.min.js" defer></script>
+    <script src="scripts/jquery.mask.min.js" defer></script>
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
@@ -655,13 +659,14 @@
         <form
           action="send.php"
           method="POST"
-          class="subscribe newsletter__subscribe"
+          class="subscribe newsletter__subscribe validate-form"
         >
           <input
-            type="text"
+            type="email"
             class="subscribe__input"
             placeholder="Your email address"
             name="email"
+            required
           />
           <button class="subscribe__button" type="submit">Send</button>
         </form>
@@ -1069,27 +1074,36 @@
             <form
               action="send.php"
               method="POST"
-              class="footer__form"
-              onsubmit="send(event, 'send.php')"
+              class="footer__form validate-form"
             >
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+              <div class="footer__input-block">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  minlength="2"
+                  required
+                />
+              </div>
+
+              <div class="footer__input-block">
+                <input
+                  type="tel"
+                  class="input footer__input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
+              </div>
+
               <textarea
                 cols="30"
                 rows="10"
                 class="message footer__msg"
                 placeholder="Message"
                 name="msg"
+                required
               ></textarea>
               <div class="footer__form__bottom">
                 <button class="footer__button form__button" type="submit">
@@ -1148,24 +1162,32 @@
         </a>
         <div class="modal__contact-form form">
           <h3 class="modal__title">Booking</h3>
-          <form action="send.php" method="POST" class="modal__form">
+          <form
+            action="send.php"
+            method="POST"
+            class="modal__form validate-form"
+          >
             <input
               type="text"
               class="input modal__input"
               placeholder="Your Full Name*"
               name="name"
+              minlength="2"
+              required
             />
             <input
-              type="text"
+              type="tel"
               class="input modal__input"
               placeholder="Phone Number*"
               name="phone"
+              required
             />
             <input
-              type="text"
+              type="email"
               class="input modal__input"
               placeholder="Email*"
               name="email"
+              required
             />
             <textarea
               cols="30"
@@ -1173,6 +1195,7 @@
               class="message modal__msg"
               placeholder="Message"
               name="msg"
+              required
             ></textarea>
             <div class="modal__form__bottom">
               <button class="modal__button form__button" type="submit">
