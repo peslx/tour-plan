@@ -1126,6 +1126,10 @@ template {
   background-color: #ffffff65;
 }
 
+.subscribe .invalid {
+  color: red;
+}
+
 .section-title {
   font-family: Mulish;
   font-style: normal;
