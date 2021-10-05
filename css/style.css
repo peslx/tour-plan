@@ -1017,7 +1017,6 @@ template {
   top: 26px;
   left: 0;
   width: 60px;
-  height: 18px;
   padding: 4px 9px;
   text-align: center;
   font-style: normal;
@@ -1031,7 +1030,6 @@ template {
 
 .package-label--active {
   width: 95px;
-  height: 30px;
   font-size: 12px;
   line-height: 15px;
   padding: 8px 12px;
