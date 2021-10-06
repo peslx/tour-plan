@@ -687,7 +687,7 @@ template {
   position: absolute;
   top: 50%;
   border: none;
-  background-color: #ec1f447c;
+  background-color: transparent;
   border-radius: 50%;
   z-index: 50;
   cursor: pointer;
@@ -707,11 +707,6 @@ template {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
   background-position-x: 9px;
-}
-
-.slider-button:hover {
-  background-color: #EC1F46;
-  box-shadow: 0 0 10px #EC1F46;
 }
 
 .booking {
@@ -2212,3 +2207,4 @@ template {
     line-height: 12px;
   }
 }
+/*# sourceMappingURL=style.css.map */
