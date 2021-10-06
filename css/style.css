@@ -1665,7 +1665,7 @@ template {
     width: 100%;
   }
   .slider-button:hover {
-    background-color: #ec1f447c;
+    background-color: transparent;
     box-shadow: none;
   }
   .booking {
