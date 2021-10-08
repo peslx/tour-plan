@@ -27,6 +27,7 @@ $(document).ready(function () {
   const burger = $("#burger");
   burger.click((e) => {
     // console.log($(".navbar-bottom"));
+    $(".navbar-menu").toggleClass("navbar-menu--mobile");
     $(".menu-button").toggleClass("menu-button--active");
     $(".menu-button__line").toggleClass("menu-button__line--active");
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
