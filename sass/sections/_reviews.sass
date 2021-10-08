@@ -1,20 +1,12 @@
-.section-title
-  font-family: Mulish
-  font-style: normal
-  font-weight: bold
-  font-size: 36px
-  line-height: 45px
-  text-align: center
-  text-transform: uppercase
-  margin: 0 auto
-  margin-top: 40px
-  margin-bottom: 70px
+
 
 .swiper
   position: static
   &-wrapper
     position: static
 .reviews
+  &__title
+    padding: 40px 0 70px 0
   &-slider
     max-width: 800px
     height: auto
@@ -25,10 +17,10 @@
     &__button
       position: absolute
       z-index: 10
-      top: 260px
+      top: 294px
       border: none
-      width: 30px
-      height: 30px
+      width: 20px
+      height: 20px
       background: transparent
       background-repeat: no-repeat
       background-size: contain
@@ -36,9 +28,9 @@
       cursor: pointer
       &--prev
         background-image: url('../img/arrow-grey-prev.svg')
-        left: 0
+        left: 25px
       &--next
-        right: 0
+        right: 25px
         background-image: url('../img/arrow-grey-next.svg')
   &__slide
     margin-top: 45px
@@ -51,6 +43,7 @@
     flex-direction: column
     align-items: center
     max-width: 730px
+    max-height: 280px
     margin: 0 auto
     padding: 0 95px 30px 95px
     border-radius: 8px
@@ -85,7 +78,7 @@
   &-author
     &__card
       margin-top: -45px
-      margin-bottom: 32px
+      margin-bottom: 30px
       position: relative
       display: flex
       flex-direction: column

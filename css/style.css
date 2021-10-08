@@ -18,6 +18,17 @@ body {
   max-width: 100%;
 }
 
+.section-title {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
 .input {
   border: none;
   outline: none;
@@ -426,7 +437,6 @@ template {
 
 .navbar__search {
   margin-right: auto;
-  margin-left: 108px;
 }
 
 .navbar-bottom {
@@ -831,6 +841,8 @@ template {
 .packages__title {
   grid-column: span 3;
   height: min-content;
+  margin-top: 40px;
+  margin-bottom: 35px;
 }
 
 .package {
@@ -876,6 +888,14 @@ template {
   padding: 46px 21px 30px 44px;
 }
 
+.package-header {
+  padding-left: 10px;
+}
+
+.package-header--active {
+  padding-left: 0;
+}
+
 .package-rank {
   display: none;
 }
@@ -898,7 +918,7 @@ template {
 
 .package-description__text--active {
   display: block;
-  margin-top: 10px;
+  margin-top: 25px;
   margin-bottom: 45px;
   font-weight: normal;
   font-size: 14px;
@@ -911,6 +931,8 @@ template {
   height: 100%;
   font-size: 12px;
   line-height: 15px;
+  padding-top: 5px;
+  padding-left: 5px;
 }
 
 .package-features--active {
@@ -969,7 +991,7 @@ template {
 
 .package-booking {
   display: flex;
-  padding-top: 17px;
+  padding-left: 4px;
   justify-content: space-between;
 }
 
@@ -1031,7 +1053,7 @@ template {
 }
 
 .newsletter {
-  padding: 98px 0 87px 0;
+  padding: 75px 0 70px 0;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -1123,25 +1145,16 @@ template {
   color: red;
 }
 
-.section-title {
-  font-family: Mulish;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 45px;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0 auto;
-  margin-top: 40px;
-  margin-bottom: 70px;
-}
-
 .swiper {
   position: static;
 }
 
 .swiper-wrapper {
   position: static;
+}
+
+.reviews__title {
+  padding: 40px 0 70px 0;
 }
 
 .reviews-slider {
@@ -1156,10 +1169,10 @@ template {
 .reviews-slider__button {
   position: absolute;
   z-index: 10;
-  top: 260px;
+  top: 294px;
   border: none;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background: transparent;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1169,11 +1182,11 @@ template {
 
 .reviews-slider__button--prev {
   background-image: url("../img/arrow-grey-prev.svg");
-  left: 0;
+  left: 25px;
 }
 
 .reviews-slider__button--next {
-  right: 0;
+  right: 25px;
   background-image: url("../img/arrow-grey-next.svg");
 }
 
@@ -1186,6 +1199,7 @@ template {
   flex-direction: column;
   align-items: center;
   max-width: 730px;
+  max-height: 280px;
   margin: 0 auto;
   padding: 0 95px 30px 95px;
   border-radius: 8px;
@@ -1225,7 +1239,7 @@ template {
 
 .review-author__card {
   margin-top: -45px;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1273,7 +1287,7 @@ template {
 }
 
 .activities {
-  padding: 60px 0 98px 0;
+  padding: 40px 0 98px 0;
 }
 
 .activities__header {
@@ -1364,8 +1378,9 @@ template {
 
 .footer__logo {
   display: flex;
-  width: 166px;
+  width: 155px;
   align-self: center;
+  margin-top: 15px;
 }
 
 .footer__categories {
@@ -1383,6 +1398,7 @@ template {
   align-content: start;
   align-items: start;
   padding-top: 24px;
+  padding-left: 20px;
 }
 
 .footer__social-links {
@@ -1398,6 +1414,7 @@ template {
   min-width: 493px;
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 }
 
 .footer__text {
@@ -1411,6 +1428,7 @@ template {
 
 .footer__contact-form {
   grid-column: span 2;
+  padding-left: 10px;
 }
 
 .footer__title {
@@ -1422,7 +1440,7 @@ template {
 }
 
 .footer__title--inline {
-  margin: 0 34px 0 0;
+  margin: 0 44px 0 -10px;
 }
 
 .footer__ul {
@@ -1460,7 +1478,7 @@ template {
 }
 
 .footer__form {
-  margin-top: 34px;
+  margin-top: 20px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -1493,12 +1511,15 @@ template {
 .footer__bottom {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  margin-top: 50px;
 }
 
 .footer__bottom-links {
   display: flex;
-  margin: 0 auto;
+  margin-right: 20%;
+  font-size: 10px;
+  line-height: 14px;
 }
 
 .footer__bottom-link {
