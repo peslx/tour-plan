@@ -665,6 +665,7 @@ template {
 .raiting__counter {
   font-size: 14px;
   line-height: 18px;
+  font-weight: bold;
 }
 
 .hotel-swiper {
@@ -2255,4 +2256,3 @@ template {
     justify-content: center;
   }
 }
-/*# sourceMappingURL=style.css.map */

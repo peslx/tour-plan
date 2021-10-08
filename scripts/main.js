@@ -78,6 +78,6 @@ $(".validate-form").each(function () {
     },
   });
 
-  $(".phone_with_ddd").mask("+7 (999) 999-99-99");
+  $(".phone").mask("+7 (999) 999-99-99");
   AOS.init();
 });
