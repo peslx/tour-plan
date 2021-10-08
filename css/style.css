@@ -1387,6 +1387,10 @@ template {
   grid-row: 1 / 4;
 }
 
+.footer__information {
+  padding-left: 10px;
+}
+
 .footer__legal {
   justify-self: end;
 }
