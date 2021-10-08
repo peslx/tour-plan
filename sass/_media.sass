@@ -182,6 +182,7 @@
       display: flex
       flex-direction: column
       gap: 20px
+
       &__item
         &--mobile
           &--visible
@@ -211,7 +212,6 @@
     width: 100%
   .map
     width: 100%
-
   .packages
     &-wrapper
       width: 100%
@@ -259,8 +259,6 @@
       align-self: flex-end
       &__old
         align-self: flex-end
-
-
   .newsletter
     background-size: 240%
     &-wrapper
@@ -273,7 +271,6 @@
     &-container
       &::before, &::after
         display: none
-    
   .reviews
     position: relative
     &-slider
@@ -312,7 +309,6 @@
     &__button
       max-width: 120px
       padding: 18px 45px
-
 
 @media screen and ( max-width: 576px )
   .container
@@ -356,7 +352,6 @@
     width: 99px
   .slider
     height: 250px
-
   .packages
     &-wrapper
       padding: 20px 0
@@ -380,7 +375,6 @@
       &--active
         flex-direction: column
         width: 100%
-        
         padding: 26px 20px 20px 20px
     &-description
       &__text
@@ -388,12 +382,9 @@
           width: 100%
           margin-bottom: 10px
           margin-top: -10px
-    &-booking
-      
+    &-booking 
       margin-top: -60px
       &--active
-
-
   .newsletter
     background-size: 360%
     padding: 76px 20px 83px 20px
@@ -519,3 +510,18 @@
       &-link
         font-size: 81%
         line-height: 12px
+
+@media screen and (max-height: 540px)
+  .navbar
+    &-menu
+      &--mobile
+        display: flex
+        flex-flow: row wrap
+        justify-content: space-evenly
+      &__item
+        &--mobile
+          &--visible
+            flex-basis: 100%
+            order: 2
+            &:first-child
+              justify-content: center
