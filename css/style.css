@@ -568,6 +568,24 @@ template {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+  position: relative;
+  z-index: 0;
+}
+
+.user:hover .user__name {
+  position: relative;
+  z-index: 0;
+}
+
+.user:hover .user__name::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #0A223D;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: -1;
 }
 
 .user__avatar {
@@ -1836,6 +1854,26 @@ template {
   width: 136px;
 }
 
+.footer__link {
+  z-index: 0;
+  position: relative;
+}
+
+.footer__link:hover {
+  color: #fff;
+}
+
+.footer__link:hover::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+}
+
 .logo {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -2130,6 +2168,12 @@ template {
     margin: 0;
   }
   .footer__bottom-payments {
+    display: none;
+  }
+  .footer__link:hover {
+    color: inherit;
+  }
+  .footer__link:hover::after {
     display: none;
   }
   .modal__window {
