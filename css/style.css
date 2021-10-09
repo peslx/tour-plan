@@ -665,6 +665,10 @@ template {
   padding-bottom: 30px;
 }
 
+.hotel__link {
+  color: #0A223D;
+}
+
 .hotel-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1300,6 +1304,7 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: Mulish;
   color: #fff;
   font-weight: 300;
   font-size: 24px;
@@ -1307,6 +1312,7 @@ template {
 }
 
 .newsletter-title__heading {
+  font-family: Mulish;
   font-weight: 600;
   font-size: 36px;
   line-height: 45px;
@@ -1922,6 +1928,8 @@ template {
   position: absolute;
   top: 17px;
   right: 18px;
+  background-color: transparent;
+  border: none;
   text-decoration: none;
   cursor: pointer;
 }
