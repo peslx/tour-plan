@@ -18,13 +18,28 @@
     align-items: center
     justify-content: space-between
     padding: 31px 0px
-
     &__link
       text-decoration: none
       color: $light
       text-transform: uppercase
       font-size: 14px
       line-height: 18px
+      position: relative
+      // z-index: 10
+      &:hover
+        &::after
+          content: ''
+          width: 110%
+          height: 105%
+          background-color: $accent-color
+          position: absolute
+          transform: translateX(-4%)
+          border-radius: 4px
+          top: 0
+          left: 0
+          z-index: -1
+        
+        
     &__item
       &--mobile
         flex-basis: auto
