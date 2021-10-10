@@ -1980,6 +1980,9 @@ template {
     cursor: pointer;
     z-index: 200;
   }
+  .navbar__search {
+    margin: auto;
+  }
   .navbar__search--mobile--hidden, .navbar__user--mobile--hidden {
     display: none;
   }
@@ -2156,6 +2159,12 @@ template {
     min-width: 320px;
     max-width: 100vw;
     overflow-x: hidden;
+  }
+  .navbar__search {
+    margin: auto;
+  }
+  .navbar-menu__item--mobile--visible {
+    max-width: 100vw;
   }
   .navbar-top {
     padding: 28px 0;
@@ -2473,5 +2482,9 @@ template {
   }
   .navbar-menu__item--mobile--visible:first-child {
     justify-content: center;
+  }
+  .modal__window {
+    max-height: 98vh;
+    overflow-y: scroll;
   }
 }
