@@ -1785,7 +1785,7 @@ template {
     padding: 30px 0;
   }
   .navbar__search {
-    margin-left: auto;
+    margin-left: 48px;
   }
   .navbar-menu {
     padding: 22px 0;
@@ -1800,10 +1800,14 @@ template {
   .search__input {
     width: 340px;
   }
+  .hotel-swiper {
+    height: 450px;
+  }
   .hotel-grid {
     flex-direction: column;
   }
   .hotel-grid__info {
+    margin-top: 30px;
     flex-direction: row;
     gap: 20px;
   }
@@ -1823,8 +1827,14 @@ template {
   .map {
     width: 340px;
   }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+    padding-bottom: 50px;
+  }
   .review-container {
     max-width: 580px;
+    max-height: 270px;
     padding: 0 64px 30px 64px;
   }
   .review-container::before {
@@ -1832,6 +1842,19 @@ template {
   }
   .review-container::after {
     margin-right: 80px;
+  }
+  .review-text {
+    height: 270px;
+    overflow-y: auto;
+  }
+  .reviews-slider__button {
+    top: 290px;
+  }
+  .reviews-slider__button--prev {
+    left: 6px;
+  }
+  .reviews-slider__button--next {
+    right: 6px;
   }
   .card__title {
     max-width: 300px;
@@ -1856,14 +1879,15 @@ template {
     display: none;
   }
   .footer {
-    padding: 73px 0 33px 0;
+    padding: 0px 0 33px 0;
   }
   .footer-wrapper {
-    grid-template-columns: repeat(3, minmax(min-content, 1fr));
-    grid-template-rows: 125px 125px 280px 300px 280px 55px;
+    grid-template-columns: 185px repeat(2, minmax(min-content, 1fr));
+    grid-template-rows: 100px 130px 270px 315px 280px 55px;
   }
   .footer__logo {
     grid-row: 1 / 3;
+    width: 98px;
   }
   .footer__social-network {
     grid-row: 1 / 3;
@@ -1879,7 +1903,7 @@ template {
   }
   .footer__legal {
     grid-column: 3;
-    justify-self: start;
+    justify-self: end;
   }
   .footer__contact-details {
     grid-column: span 3;
@@ -1892,13 +1916,12 @@ template {
     flex-basis: 48%;
   }
   .footer__bottom {
-    margin-top: 56px;
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
   }
   .footer__bottom-links {
     margin: 0;
-  }
-  .footer__bottom-payments {
-    display: none;
   }
   .footer__link:hover {
     color: inherit;
@@ -1912,7 +1935,7 @@ template {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   body {
     padding-top: 78px;
   }

@@ -46,7 +46,7 @@
     &-top
       padding: 30px 0
     &__search
-      margin-left: auto
+      margin-left: 48px
     &-menu
       padding: 22px 0
       &__link
@@ -59,9 +59,12 @@
     &__input
       width: 340px
   .hotel
+    &-swiper
+      height: 450px
     &-grid
       flex-direction: column
       &__info
+        margin-top: 30px
         flex-direction: row
         gap: 20px
     &-slider
@@ -76,14 +79,33 @@
     width: 340px
   .map
     width: 340px
+  .reviews
+    &__title
+      font-size: 30px
+      line-height: 38px
+      padding-bottom: 50px
   .review
     &-container
       max-width: 580px
+      max-height: 270px
       padding: 0 64px 30px 64px
       &::before
         margin-left: 80px
       &::after
         margin-right: 80px
+    &-text
+      height: 270px
+      overflow-y: auto
+  .reviews
+    &__title
+    &-slider
+      &__button
+        top: 290px
+        &--prev
+          left: 6px
+        &--next
+          right: 6px
+
   .card
     &__title
       max-width: 300px
@@ -110,12 +132,13 @@
 
 
   .footer
-    padding: 73px 0 33px 0
+    padding: 0px 0 33px 0
     &-wrapper
-      grid-template-columns: repeat(3, minmax(min-content, 1fr))
-      grid-template-rows: 125px 125px 280px 300px 280px 55px
+      grid-template-columns: 185px repeat(2, minmax(min-content, 1fr))
+      grid-template-rows: 100px 130px 270px 315px 280px 55px
     &__logo
       grid-row: 1 / 3
+      width: 98px
     &__social
       &-network
         grid-row: 1 / 3
@@ -128,7 +151,7 @@
       grid-column: 2
     &__legal
       grid-column: 3
-      justify-self: start
+      justify-self: end
     &__contact-details
       grid-column: span 3
     &__contact-form
@@ -140,11 +163,13 @@
     &__title
       &--inline
     &__bottom
-      margin-top: 56px
+      display: flex
+      margin-top: 40px
+      justify-content: space-between
       &-links
         margin: 0
       &-payments
-        display: none
+        // display: none
     &__link
       &:hover
         color: inherit
@@ -155,7 +180,7 @@
       max-width: 378px
       padding: 20px 55px
 
-@media screen and ( max-width: 768px )
+@media screen and ( max-width: 767px )
   body
     padding-top: 78px
   .container
@@ -190,6 +215,7 @@
         gap: 4px
         cursor: pointer
         z-index: 200
+
     &__search, &__user
       &--mobile
         &--hidden
