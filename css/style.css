@@ -1238,7 +1238,7 @@ template {
 
 .reviews-slider {
   max-width: 800px;
-  height: auto;
+  max-height: 390px;
 }
 
 .reviews-slider__wrapper {
@@ -1326,6 +1326,8 @@ template {
 
 .review-text {
   max-width: 537px;
+  max-height: 200px;
+  overflow-y: auto;
   padding-right: 5px;
   font-weight: normal;
   font-size: 12px;
@@ -1774,6 +1776,7 @@ template {
 @media screen and (max-width: 992px) {
   .container, .newsletter-wrapper {
     max-width: 700px;
+    overflow-x: hidden;
   }
   .button:hover::after {
     display: none;
@@ -1834,7 +1837,7 @@ template {
   }
   .review-container {
     max-width: 580px;
-    max-height: 270px;
+    max-height: 315px;
     padding: 0 64px 30px 64px;
   }
   .review-container::before {
@@ -1844,7 +1847,7 @@ template {
     margin-right: 80px;
   }
   .review-text {
-    height: 270px;
+    height: 320px;
     overflow-y: auto;
   }
   .reviews-slider__button {
@@ -1878,12 +1881,15 @@ template {
   .card__button:hover::after {
     display: none;
   }
+  .activities {
+    padding: 55px 0 70px 0;
+  }
   .footer {
     padding: 0px 0 33px 0;
   }
   .footer-wrapper {
     grid-template-columns: 185px repeat(2, minmax(min-content, 1fr));
-    grid-template-rows: 100px 130px 270px 315px 280px 55px;
+    grid-template-rows: 130px 100px 270px 315px 280px 55px;
   }
   .footer__logo {
     grid-row: 1 / 3;
@@ -1900,6 +1906,7 @@ template {
   }
   .footer__information {
     grid-column: 2;
+    letter-spacing: -.5px;
   }
   .footer__legal {
     grid-column: 3;
@@ -1911,6 +1918,7 @@ template {
   .footer__contact-form {
     max-width: 540px;
     grid-column: span 3;
+    padding-left: 0;
   }
   .footer__input-block {
     flex-basis: 48%;
@@ -2144,9 +2152,9 @@ template {
 
 @media screen and (max-width: 576px) {
   .container {
+    padding: 0 20px;
     min-width: 320px;
     max-width: 100vw;
-    padding: 0 20px;
     overflow-x: hidden;
   }
   .navbar-top {
